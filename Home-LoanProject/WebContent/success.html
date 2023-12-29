@@ -1,0 +1,140 @@
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Welcome</title>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Success</title>
+    <style>
+       *,:before,:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Helvetica;
+}
+
+body {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  
+}
+
+.container {
+  width: 20em;
+  height: 1.15em;
+  font-size: 4rem;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.container div {
+  position: absolute;
+  left: 0;
+  text-transform: uppercase;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.upper {
+  top: 0;
+  height: 52.5%;
+  color: #fff;
+  overflow: hidden;
+  z-index: 3;
+  animation: moveUp 3s ease-in-out 1;
+  background-color: #121212;
+}
+
+.lower {
+  bottom: 0;
+  height: 100%;
+  background: linear-gradient(180deg, #121212 52.5%, #fff 52.5%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  z-index: 1;
+  animation: moveDown 3s ease-in-out 1;
+}
+
+.inside {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  text-align: center;
+  z-index: 2;
+  font-size: 1rem;
+  color: #009688;
+}
+
+@keyframes moveUp {
+  0%,
+  100% {
+    top: 0;
+  }
+
+  50%,
+  70% {
+    top: -45px;
+  }
+}
+
+@keyframes moveDown {
+  0%,
+  100% {
+    top: 0;
+  }
+
+  50%,
+  70% {
+    top: 30px;
+  }
+}
+
+@media (max-width: 424px) {
+  .container {
+    font-size: 2.5rem;
+  }
+
+  .inside {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    font-size: 2rem;
+  }
+
+  .inside {
+    font-size: 0.5rem;
+  }
+}
+.con {
+  position: absolute;
+            bottom: 200px;;
+            left: 600px;
+            }
+          a:link {
+          color: lightblue;
+          }  
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+      <div class="upper">Welcome to LOANVISTA</div>
+      <div class="lower">Welcome to LOANVISTA</div>
+      <div class="inside">Your Account Has Been Registered Successfully</div>
+    </div>
+    <div class="con">
+<a href="#" style="text-align: center;" onclick="window.location.href='Login.jsp'; return false;">Back to Login </a>
+</div>    
+
+</body>
+</html>
